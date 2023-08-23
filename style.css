@@ -132,6 +132,7 @@ input:focus {
 .submit-btn:hover {
   color: black;
   background-color: white;
+  cursor: pointer;
 }
 
 .submit-btn:active {

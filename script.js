@@ -80,7 +80,7 @@ phoneNumberInput.addEventListener("focusout", () => {
 });
 
 passwordInput.addEventListener("focus", () => {
-  displayFormat(passwordInput, passwordValidationDiv, "Minimum eight characters, at least one letter and one number")
+  displayFormat(passwordInput, passwordValidationDiv, "Minimum 8 characters, at least one letter and one number")
 });
 
 passwordInput.addEventListener("focusout", () => {
