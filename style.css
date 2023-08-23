@@ -1,0 +1,153 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Open+Sans:wght@300;400;500;600;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+body {
+  display: flex;
+  height: 100vh;
+  width: 100vw;
+  background-color: black;
+  color: white;
+}
+
+
+.image-container {
+  background-image: url(./lily-banse--YHSwy6uqvk-unsplash.jpg);
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  width: 40%;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.brand-name-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.8);
+  padding: 1rem 0rem;
+  width: 100%;
+}
+
+.brand-name {
+  font-family: 'Anton', sans-serif;
+  font-size: 4vw;
+}
+
+
+.chef-icon {
+  margin: 0 0.5rem;
+}
+
+
+.form-container {
+  display: flex;
+  flex-direction: column;
+
+  width: 60%;
+  font-family: 'Open Sans', sans-serif;
+  padding: 6vh 4.5vw;
+}
+
+.para1 {
+  font-size: 2.5vw;
+  font-weight: 700;
+  margin-bottom: 2.3vh;
+  line-height: 7vh;
+}
+
+.para2 {
+  font-size: 1.5vw;
+  margin-bottom: 2.5vh;
+}
+
+.para3 {
+  font-size: 1.3vw;
+  margin-bottom: 2vh;
+}
+
+form {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 2vw;
+  row-gap: 1vh;
+}
+
+.form-item {
+  display: flex;
+  flex-direction: column;
+}
+
+
+label {
+  font-size: 1.1vw;
+  margin: 0.7vh 0.2vw;
+  font-weight: 600;
+}
+
+
+input {
+  padding: 1vh 0.7vw;
+  border-radius: 0.3rem;
+  height: 4.5vh;
+  width: 100%;
+  border: none;
+  background-color: white;
+  font-size: 0.8vw;
+}
+
+input:focus {
+  outline: none;
+  background-color: white;
+}
+
+
+.validation {
+  margin-top: 0.3vh;
+  font-size: 0.8vw;
+}
+
+
+.submit-btn {
+  font-size: 1.5vw;
+  font-weight: 700;
+  margin: 2vh 0;
+  width: 60%;
+  padding: 2vh 0;
+
+  color: white;
+  background-color: black;
+  border: 0.1vw solid white;
+  border-radius: 0.4rem;
+}
+
+.submit-btn:hover {
+  color: black;
+  background-color: white;
+}
+
+.submit-btn:active {
+  transform: scale(0.98);
+  box-shadow: 3px 2px 22px 1px rgba(0, 0, 0, 0.24);
+}
+
+
+.log-in-div {
+  margin-top: 0.5vh;
+  font-size: 1.1vw;
+
+}
+
+.log-in-link {
+  text-decoration: underline;
+  color: white;
+  font-weight: bold;
+}

@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sign-Up Form</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+
+<body>
+  <div class="image-container">
+    <div class="brand-name-container">
+      <div class="brand-name">The Prep Chef</div>
+      <div class="chef-icon"><img src="chef-hat-icon.png" alt=""></div>
+    </div>
+  </div>
+
+  <div class="form-container">
+    <div class="text para1">
+      Discover the joy of meal prepping with us!
+    </div>
+    <div class="text para2">
+      Sign up now to access mouthwatering recipes, time-saving tips, and personalized meal plans.
+    </div>
+    <div class="text para3">
+      Start your journey towards healthier, more convenient eating today.
+    </div>
+
+    <form action="#">
+      <div class="form-item">
+        <label for="name">Name *</label>
+        <input type="text" name="user_name" id="name" placeholder="John" required>
+        <div class="validation name-validation">&nbsp;</div>
+      </div>
+
+      <div class="form-item">
+        <label for="surname">Surname *</label>
+        <input type="text" name="user_surname" id="surname" placeholder="Doe" required>
+        <div class="validation surname-validation">&nbsp;</div>
+      </div>
+
+      <div class="form-item">
+        <label for="email">Email *</label>
+        <input type="email" name="user_email" id="email" placeholder="example@site.org" required>
+        <div class="validation email-validation">&nbsp;</div>
+      </div>
+
+      <div class="form-item">
+        <label for="phone-number">Phone Number</label>
+        <input type="text" name="user_phone_number" id="phone-number" placeholder="1234567" pattern="^[0-9]*$" minlength="7" required>
+        <div class="validation phone-number-validation">&nbsp;</div>
+      </div>
+
+      <div class="form-item">
+        <label for="password">Password *</label>
+        <input type="password" name="user_password" id="password" required pattern="^(?=.*[A-Za-z])(?=.*\d)[A-Za-z\d]{8,}$">
+        <div class="validation password-validation">&nbsp;</div>
+      </div>
+
+      <div class="form-item">
+        <label for="confirm-password">Confirm Password *</label>
+        <input type="password" id="confirm-password" required>
+        <div class="validation confirm-password-validation">&nbsp;</div>
+      </div>
+
+      <button class="submit-btn" type="submit">Create Account</button>
+    </form>
+
+    <div class="log-in-div">
+      Already have an account? <a href="#" class="log-in-link">Log In</a>
+    </div>
+  </div>
+
+</body>
+
+</html>
